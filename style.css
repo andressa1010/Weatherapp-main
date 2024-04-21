@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Popins', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background: url(./imagens/clima.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;  
+    width: 100%;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg,#000000, #72f6fb);
+
+    color: #fff;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+}
+.container h1{
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+.pesquisa {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.pesquisa input {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 20px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+}
+.pesquisa button {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+.pesquisa button img {
+    width: 20px;
+}
+.icone-chuva {
+    width: 170px;
+    margin-top: 30px;
+}
+.clima h1{
+    font-size: 80px;
+    font-weight: 500;
+}
+.clima h2{
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+.detalhes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+.coluna {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.coluna img {
+    width: 40px;
+    margin-right: 10px;
+}
+.umidade, .vento {
+    font-size: 28px;
+    margin-top: -6px;
+}
+
+.clima {
+    display:none;
+}
+.erro {
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+
+    .clima h1 {
+        font-size: 60px;
+    }
+
+    .clima h2 {
+        font-size: 30px;
+    }
+
+    .detalhes {
+        flex-direction: column;
+    }
+
+    .coluna {
+        margin-top: 20px;
+    }
+
+    .coluna img {
+        width: 30px;
+    }
+
+    .umidade, .vento {
+        font-size: 20px;
+    }
+    .pesquisa button {
+        border: 0;
+        outline: 0;
+        background: #ebfffc;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+    }
+    .pesquisa input {
+        border: 0;
+        outline: 0;
+        background: #ebfffc;
+        color: #555;
+        padding: 10px 10px;
+        height: 40px;
+        border-radius: 20px;
+        flex: 1;
+        margin-right: 16px;
+        font-size: 18px;
+    }
+    .pesquisa button img {
+        width: 15px;
+    }
+}

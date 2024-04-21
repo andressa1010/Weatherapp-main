@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather Website</title>
+    <link rel="icon" href="https://www.pngall.com/wp-content/uploads/11/Weather-PNG-Pic.png">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Confira o clima de uma cidade:</h1>
+        <div class="pesquisa">
+            <input type="text" placeholder="Digite o nome da cidade" spellcheck="false" id="input-cidade">
+            <button><img src="imagens/search.png" alt="iconepesuisar"></button>
+        </div>
+        <div class="erro">
+            <p>Cidade inválida, insira outra.</p>
+        </div>
+        <div class="clima">
+            <img src="https://openweathermap.org/img/wn/01d.png" class="icone-chuva">
+            <h1 class="temperatura">29°</h1>
+            <h2 class="cidade">Belo Horizonte</h2>
+            <div class="detalhes">
+                <div class="coluna">
+                   <img src="imagens/humidity.png">
+                   <div>
+                    <p class="umidade">47%</p>
+                    <p>Umidade</p>
+                   </div> 
+                </div>
+                <div class="coluna">
+                    <img src="imagens/wind.png">
+                    <div>
+                     <p class="vento">3km/h</p>
+                     <p>Velocidade vento</p>
+                    </div> 
+                 </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
